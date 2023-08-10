@@ -11,7 +11,7 @@ type Props = {
 const Sidebar = ({ collapsed, setCollapsed }: Props) => {
   return (
     <>
-      <section className="bg-[#272684] h-screen px-2 text-white">
+      <section className="bg-[#272684] h-screen text-white px-3">
         <div className="h-16 flex items-center justify-between border-b border-[#2C5BCD]">
           {!collapsed && <img className="w-12" src="/images/me.png" alt="" />}
           <button
@@ -25,10 +25,10 @@ const Sidebar = ({ collapsed, setCollapsed }: Props) => {
             )}
           </button>
         </div>
-        <ul className="space-y-4 my-4 items-stretch">
+        <ul className="space-y-4 my-4">
           {menus.map((menu, index) => (
-            <li key={index} className="flex items-center items-stretch gap-2">
-              <span className="w-6">{menu.icon}</span> <span>{menu.label}</span>
+            <li key={index} className="flex items-center gap-2">
+              <span className="w-6">{menu.icon}</span> <span>{!collapsed && menu.label}</span>
             </li>
           ))}
         </ul>
