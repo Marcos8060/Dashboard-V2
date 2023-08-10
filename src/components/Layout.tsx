@@ -1,14 +1,13 @@
-import React, { useState,ReactNode } from "react";
+import React, { useState, ReactNode } from "react";
 import Sidebar from "./Sidebar";
 import MainSection from "./MainSection";
 import Navbar from "./Navbar";
-
 
 interface LayoutProps {
   children: ReactNode; // Specify the type for children prop
 }
 
-const Layout: React.FC<LayoutProps> = ({children }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -32,4 +31,3 @@ const Layout: React.FC<LayoutProps> = ({children }) => {
 };
 
 export default Layout;
-
