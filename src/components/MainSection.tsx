@@ -2,7 +2,9 @@ import React from 'react'
 
 const MainSection = () => {
   return (
-    <div>MainSection</div>
+    <section className='bg-[#EDF2FB] h-[100vh] p-4'>
+      Main Section
+    </section>
   )
 }
 
