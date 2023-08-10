@@ -1,42 +1,14 @@
-// import React, { useState } from "react";
-// import Sidebar from "./Sidebar";
-// import MainSection from "./MainSection";
-// import Navbar from "./Navbar";
-
-// const Layout = () => {
-//   const [collapsed, setCollapsed] = useState(false);
-
-//   return (
-//     <>
-//       <section className={`${collapsed ? "flex gap-1" : "flex"}`}>
-//         <div className={`${collapsed ? "w-16" : "w-3/12"}`}>
-//           <Sidebar
-//             collapsed={collapsed}
-//             setCollapsed={() => setCollapsed((prev) => !prev)}
-//           />
-//         </div>
-//         <div className="w-full">
-//           <Navbar />
-//           <MainSection />
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-
-// export default Layout;
-
-
-
-
-
-
-import React, { useState } from "react";
+import React, { useState,ReactNode } from "react";
 import Sidebar from "./Sidebar";
 import MainSection from "./MainSection";
 import Navbar from "./Navbar";
 
-const Layout = () => {
+
+interface LayoutProps {
+  children: ReactNode; // Specify the type for children prop
+}
+
+const Layout: React.FC<LayoutProps> = ({children }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -53,7 +25,7 @@ const Layout = () => {
       </div>
       <div className="flex-1 overflow-y-auto">
         <Navbar />
-        <MainSection />
+        <div>{children}</div>
       </div>
     </div>
   );

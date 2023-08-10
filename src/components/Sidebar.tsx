@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from "react-icons/bs";
 import classNames from "classnames";
 import menus from "../utils/menu";
+import Link from "next/link";
 
 type Props = {
   collapsed: boolean;
@@ -27,8 +28,11 @@ const Sidebar = ({ collapsed, setCollapsed }: Props) => {
         </div>
         <ul className="space-y-4 my-4">
           {menus.map((menu, index) => (
-            <li key={index} className="flex items-center gap-2">
-              <span className="w-6">{menu.icon}</span> <span>{!collapsed && menu.label}</span>
+            <li key={index} >
+              <Link className="flex items-center gap-2" href={menu.href}>
+                <span className="w-6">{menu.icon}</span>{" "}
+                <span>{!collapsed && menu.label}</span>
+              </Link>
             </li>
           ))}
         </ul>
