@@ -1,6 +1,5 @@
 
 import { LineGraph } from "@/highcharts/line-graph";
-
 const Dashboard = () => {
   return (
     <>

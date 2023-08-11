@@ -17,6 +17,7 @@ export const LineGraph = () => {
         fontFamily: "inherit", // Set the desired font family
         fontSize: "14px", // Set the desired font size
       },
+      zIndex: -1, // Set the desired z-index value here
     },
     title: {
       text: "Tech Pay Gap in Kenya",
