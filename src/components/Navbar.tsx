@@ -51,12 +51,7 @@ const Navbar = () => {
 
   return (
     <>
-      <section className="flex justify-between sm:px-16 p-4 sticky top-0 z-50"
-      style={{
-        transition: "1s ease",
-        backgroundColor: navBackground ? "#112240" : "transparent",
-      }} 
-      >
+      <section className="flex justify-between sm:px-16 p-4 sticky top-0 z-50">
         <div className="">
            <h1 className="text-xl">Main Dashboard</h1>
         </div>
