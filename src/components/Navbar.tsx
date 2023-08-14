@@ -62,22 +62,7 @@ const Navbar = () => {
             <img className="w-10" src="/images/me.png" alt="" />
           </Link>
         </div>
-        <nav className="md:block hidden py-6">
-          <ul className="flex items-center gap-8">
-            <li className="text-secondary text-xs">
-              <a href="#about" className="text-white text-sm">About</a>
-            </li>
-            <li className="text-secondary text-xs">
-              <a href="#experience" className="text-white text-sm">Experience</a>
-            </li>
-            <li className="text-secondary text-xs">
-              <a href="#projects" className="text-white text-sm">Work</a>
-            </li>
-            <li className="text-secondary text-xs">
-              <a href="#contact" className="text-white text-sm">Contact</a>
-            </li>
-          </ul>
-        </nav>
+       
         <div className="md:hidden block py-4">
           <AiOutlineMenu
             className="text-secondary text-2xl cursor-pointer"
