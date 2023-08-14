@@ -51,21 +51,19 @@ const Navbar = () => {
 
   return (
     <>
-      <section className="flex justify-between sm:px-16 px-4 sticky top-0 z-50"
+      <section className="flex justify-between sm:px-16 p-4 sticky top-0 z-50"
       style={{
         transition: "1s ease",
         backgroundColor: navBackground ? "#112240" : "transparent",
       }} 
       >
-        <div className="py-4">
-          <Link href="/" className="">
-            <img className="w-10" src="/images/me.png" alt="" />
-          </Link>
+        <div className="">
+           <h1 className="text-xl">Main Dashboard</h1>
         </div>
        
-        <div className="md:hidden block py-4">
+        <div className="md:hidden block">
           <AiOutlineMenu
-            className="text-secondary text-2xl cursor-pointer"
+            className="text-black text-2xl cursor-pointer"
             onClick={() => setIsOpen(true)}
           />
           <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
