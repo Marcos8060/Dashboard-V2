@@ -35,6 +35,23 @@ const menus = [
     label: "Projects",
     href: "/projects",
     icon: <FolderIcon className="w-6 h-6" />,
+    children: [
+      {
+        label: "All Projects",
+        href: "/dashboard/users/all-users",
+        icon: <UserGroupIcon className="w-6 h-6" />,
+      },
+      {
+        label: "Approved Projects",
+        href: "/dashboard/users/approved-users",
+        icon: <UserGroupIcon className="w-6 h-6" />,
+      },
+      {
+        label: "Rejected Projects",
+        href: "/dashboard/users/approved-users",
+        icon: <UserGroupIcon className="w-6 h-6" />,
+      },
+    ]
   },
   {
     label: "Calendar",
