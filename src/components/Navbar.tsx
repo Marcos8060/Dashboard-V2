@@ -22,6 +22,8 @@ const Navbar = () => {
     };
   }, []);
 
+  console.log("navBackground:", navBackground);
+
   return (
     <>
       <section
