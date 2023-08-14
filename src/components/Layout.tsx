@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <div className="flex-1 overflow-y-auto">
         <Navbar />
-        <div>{children}</div>
+        <div className="bg-[#DFEAF0]">{children}</div>
       </div>
     </div>
   );

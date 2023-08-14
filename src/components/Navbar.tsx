@@ -27,11 +27,11 @@ const Navbar = () => {
   return (
     <>
       <section
-        className="flex justify-between sm:px-16 p-4 sticky top-0 z-50"
-        style={{
-          transition: "1s ease",
-          backgroundColor: navBackground ? "#272684" : "transparent",
-        }}
+        className="flex justify-between sm:px-16 p-4 sticky top-0 z-50 shadow-xl bg-[#272684] text-white"
+        // style={{
+        //   transition: "1s ease",
+        //   backgroundColor: navBackground ? "#272684" : "transparent",
+        // }}
       >
         <div className="">
           <h1 className="text-xl">Main Dashboard</h1>
