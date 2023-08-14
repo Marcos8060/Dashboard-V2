@@ -1,6 +1,5 @@
 import React, { useState, ReactNode } from "react";
 import Sidebar from "./Sidebar";
-import MainSection from "./MainSection";
 import Navbar from "./Navbar";
 
 interface LayoutProps {
