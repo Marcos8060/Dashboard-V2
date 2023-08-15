@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import menus from "@/utils/menu";
+import { MenuChild } from "./MenuChild";
 
 type Props = {
+  collapsed: boolean,
   isOpen: boolean;
   setIsOpen(isOpen: boolean): void;
 };
 
-export const Drawer = ({ isOpen, setIsOpen }: Props) => {
+export const Drawer = ({ isOpen, setIsOpen,collapsed }: Props) => {
   return (
     <>
       <main
@@ -36,12 +38,7 @@ export const Drawer = ({ isOpen, setIsOpen }: Props) => {
             <div>
               <ul className="space-y-4 my-4">
                 {menus.map((menu, index) => (
-                  <li key={index}>
-                    <Link className="flex items-center gap-2" href={menu.href}>
-                      <span className="w-6">{menu.icon}</span>{" "}
-                      <span>{menu.label}</span>
-                    </Link>
-                  </li>
+                  <MenuChild key={index} {...{ index, menu,collapsed}} />
                 ))}
               </ul>
             </div>

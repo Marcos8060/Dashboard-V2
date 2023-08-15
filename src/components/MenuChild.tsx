@@ -24,17 +24,18 @@ type MenuItem = {
     return(
       <>
       <li key={index}>
-                {menu?.children ? (
+                {!collapsed && menu?.children ? (
                   <>
                     <span
-                      className="flex items-center justify-between hover:bg-[#2C5BCD] rounded py-2 px-2"
+                      onClick={()=> setShowChild((prev) => !prev)}
+                      className="flex items-center justify-between hover:bg-[#2C5BCD] rounded py-2 px-2 cursor-pointer"
                     >
                       <div className="flex items-center gap-2">
                         <span className="w-6">{menu.icon}</span>{" "}
                         <span>{!collapsed && menu.label}</span>
                       </div>
                       <div>
-                        <span className="cursor-pointer" onClick={()=> setShowChild((prev) => !prev)}>{!collapsed &&  icon}</span>
+                        <span className="cursor-pointer">{!collapsed &&  icon}</span>
                       </div>
                     </span>
                   </>

@@ -2,7 +2,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Drawer } from "./Drawer";
 
-const Navbar = () => {
+type props ={
+  collapsed: boolean
+}
+
+const Navbar = ({ collapsed }:props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [navBackground, setNavBackground] = useState(false);
 
@@ -34,10 +38,10 @@ const Navbar = () => {
 
         <div className="md:hidden block">
           <AiOutlineMenu
-            className="text-black text-2xl cursor-pointer"
+            className="text-2xl cursor-pointer"
             onClick={() => setIsOpen(true)}
           />
-          <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Drawer {...{isOpen,setIsOpen,collapsed}} />
         </div>
       </section>
     </>

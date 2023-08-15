@@ -1,5 +1,6 @@
-import { Column, Item, SearchPanel, Toolbar } from "devextreme-react/data-grid";
-import { DataGrid } from "devextreme-react";
+import Dashboard from "./dashboard";
+import { LineGraph } from "@/highcharts/line-graph";
+
 
 export default function Home() {
   return (
@@ -19,25 +20,8 @@ export default function Home() {
             No. of Beneficiaries
           </div>
         </div>
-        <DataGrid
-          // dataSource={transactions}
-          allowColumnReordering={true}
-          rowAlternationEnabled={true}
-          showBorders={true}
-          height={"70vh"}
-          className="shadow-2xl rounded-xl z-0"
-        >
-          <Column dataField="name" caption="From Account" />
-          <Column dataField="amount" caption="Amount" />
-          <Column dataField="transaction" caption="Transaction" />
-          <Column dataField="client" caption="Client Number" />
-          <Column dataField="reference" caption="Transaction Refrence" />
-          <Column dataField="date" caption="Transaction Date" />
-          <Column dataField="response" caption="Response" />
-          <Toolbar>
-            <Item location="after" name="searchPanel" />
-          </Toolbar>
-        </DataGrid>
+        <h1 className="text-2xl">Tech Renumeration in Kenya</h1>
+        <LineGraph />
       </section>
     </>
   );
