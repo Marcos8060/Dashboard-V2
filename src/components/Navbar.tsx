@@ -2,11 +2,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Drawer } from "./Drawer";
 
-type props ={
-  collapsed: boolean
-}
+type props = {
+  collapsed: boolean;
+};
 
-const Navbar = ({ collapsed }:props) => {
+const Navbar = ({ collapsed }: props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [navBackground, setNavBackground] = useState(false);
 
@@ -26,22 +26,26 @@ const Navbar = ({ collapsed }:props) => {
     };
   }, []);
 
-
   return (
     <>
-      <section
-        className="flex justify-between sm:px-16 p-4 sticky top-0 z-50 shadow-xl bg-primary text-white"
-      >
+      <section className="flex justify-between sm:px-8 px-2 py-4 sticky top-0 z-50 shadow-xl bg-primary text-white">
         <div className="">
           <h1 className="text-xl">Main Dashboard</h1>
         </div>
 
-        <div className="md:hidden block">
-          <AiOutlineMenu
-            className="text-2xl cursor-pointer"
-            onClick={() => setIsOpen(true)}
+        <div className="flex items-center gap-4">
+          <div className="md:hidden block">
+            <AiOutlineMenu
+              className="text-2xl cursor-pointer"
+              onClick={() => setIsOpen(true)}
+            />
+            <Drawer {...{ isOpen, setIsOpen, collapsed }} />
+          </div>
+          <img
+            className="w-10 h-10 rounded-full cursor-pointer"
+            src="/images/me.png"
+            alt=""
           />
-          <Drawer {...{isOpen,setIsOpen,collapsed}} />
         </div>
       </section>
     </>
