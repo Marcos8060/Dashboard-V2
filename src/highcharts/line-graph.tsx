@@ -20,7 +20,7 @@ export const LineGraph = () => {
       zIndex: -1, // Set the desired z-index value here
     },
     title: {
-      text: "Rise of Tech Experts in Kenya",
+      text: "Distribution of Software Engineers in Kenya",
     },
     xAxis: {
       title: {
