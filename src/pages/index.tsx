@@ -1,4 +1,3 @@
-import Dashboard from "./statistics";
 import { LineGraph } from "@/highcharts/line-graph";
 
 export default function Home() {
