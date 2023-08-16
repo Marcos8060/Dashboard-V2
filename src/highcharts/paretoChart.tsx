@@ -76,7 +76,7 @@ const ParetoChart = () => {
 
   return (
     <section className="p-4 space-y-4 pb-20 z-0">
-      <h1 className="text-2xl">Tech Industry's Impact Across Diverse Economy Sectors</h1>
+      <h1 className="text-2xl">Tech Industry Impact Across Diverse Economy Sectors</h1>
       <div className="bg-white shadow-2xl w-full rounded z-0">
         <HighchartsReact highcharts={Highcharts} options={options} />
       </div>
