@@ -1,4 +1,4 @@
-import Dashboard from "./dashboard";
+import Dashboard from "./statistics";
 import { LineGraph } from "@/highcharts/line-graph";
 
 

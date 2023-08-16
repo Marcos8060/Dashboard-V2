@@ -11,22 +11,32 @@ import {
 const menus = [
   {
     label: "Dashboard",
-    href: "/dashboard",
+    href: "/",
     icon: <HomeIcon className="w-6 h-6" />,
   },
   {
-    label: "Users",
-    href: "/team",
+    label: "Statistics",
+    href: "/statistics",
+    icon: <HomeIcon className="w-6 h-6" />,
+  },
+  {
+    label: "Sector",
+    href: "/sector",
     icon: <UserGroupIcon className="w-6 h-6" />,
     children: [
       {
-        label: "All Users",
-        href: "/dashboard/users/all-users",
+        label: "Fintech",
+        href: "/dashboard/sector/fintech",
         icon: <UserGroupIcon className="w-6 h-6" />,
       },
       {
-        label: "Approved Users",
-        href: "/dashboard/users/approved-users",
+        label: "Health",
+        href: "/dashboard/sector/health",
+        icon: <UserGroupIcon className="w-6 h-6" />,
+      },
+      {
+        label: "Agriculture",
+        href: "/dashboard/sector/agriculture",
         icon: <UserGroupIcon className="w-6 h-6" />,
       },
     ],

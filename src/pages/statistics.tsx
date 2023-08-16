@@ -3,7 +3,7 @@ import { Column, Item, SearchPanel, Toolbar } from "devextreme-react/data-grid";
 import { DataGrid } from "devextreme-react";
 
 
-const Dashboard = () => {
+const Statistics = () => {
   return (
     <>
       <section className="p-4 space-y-4 pb-12 z-0">
@@ -47,4 +47,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Statistics;
