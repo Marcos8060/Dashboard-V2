@@ -12,7 +12,7 @@ const Sidebar = ({ collapsed, setCollapsed }: Props) => {
 
   return (
     <>
-      <section className="bg-[#272684] h-screen text-white px-3">
+      <section className="bg-primary h-screen text-white px-3">
         <div className="h-16 flex items-center justify-between border-b border-[#2C5BCD]">
           {!collapsed && <img className="w-12" src="/images/me.png" alt="" />}
           <button

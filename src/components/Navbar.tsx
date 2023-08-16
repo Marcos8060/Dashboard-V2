@@ -30,7 +30,7 @@ const Navbar = ({ collapsed }:props) => {
   return (
     <>
       <section
-        className="flex justify-between sm:px-16 p-4 sticky top-0 z-50 shadow-xl bg-[#272684] text-white"
+        className="flex justify-between sm:px-16 p-4 sticky top-0 z-50 shadow-xl bg-primary text-white"
       >
         <div className="">
           <h1 className="text-xl">Main Dashboard</h1>
