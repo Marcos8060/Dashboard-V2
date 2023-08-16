@@ -20,23 +20,28 @@ export const LineGraph = () => {
       zIndex: -1, // Set the desired z-index value here
     },
     title: {
-      text: "Tech Pay Gap in Kenya",
+      text: "Rise of Tech Experts in Kenya",
     },
     xAxis: {
       title: {
-        text: "Years",
+        text: "Technology Industry Sector",
       },
-      categories: ["2018", "2019", "2020", "2021", "2022", "2023"],
+      categories: ["AI & Machine Learning", "DevOps", "Quality Assurance", "Data Science", "Android Developers", "Web Developers"],
     },
     yAxis: {
+      min: 0,
+      max: 100,
       title: {
-        text: "",
+        text: "Industry Sector",
+      },
+      labels: {
+        format: "{value}%", // Display y-axis labels as percentages
       },
     },
     series: [
       {
         name: "",
-        data: [10000, 30000, 32000, 40000, 60000, 70000],
+        data: [10, 30, 40, 50, 70, 90],
         // color: theme.palette.secondary.main,
       },
     ],
@@ -44,7 +49,7 @@ export const LineGraph = () => {
       enabled: false,
     },
     exporting: {
-      enabled: false,
+      enabled: true,
     },
   });
   return (

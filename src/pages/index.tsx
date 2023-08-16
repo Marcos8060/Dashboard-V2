@@ -20,7 +20,7 @@ export default function Home() {
             No. of Beneficiaries
           </div>
         </div>
-        <h1 className="text-2xl">Renumeration for Entry Software Developers in Kenya</h1>
+        <h1 className="text-2xl">Demand for Software Developers in Kenya</h1>
         <LineGraph />
       </section>
     </>
