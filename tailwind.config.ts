@@ -10,6 +10,8 @@ const config: Config = {
     colors:{
       primary: '#272684',
       white: '#FFFFFF',
+      hover: '#2C5BCD',
+      black: '#000000',
     }
   },
   plugins: [],
