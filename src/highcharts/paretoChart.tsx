@@ -20,7 +20,7 @@ const ParetoChart = () => {
       type: "column",
     },
     title: {
-      text: "Restaurants Complaints",
+      text: "Tech Industry Impact across the Economy",
     },
     tooltip: {
       shared: true,
@@ -41,7 +41,7 @@ const ParetoChart = () => {
     yAxis: [
       {
         title: {
-          text: "Complaints",
+          text: "",
         },
       },
       {
@@ -58,7 +58,7 @@ const ParetoChart = () => {
     ],
     series: [
       {
-        name: "Complaints",
+        name: "Progress",
         type: "column",
         data: complaintData,
       },
